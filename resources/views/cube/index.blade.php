@@ -1,24 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout')
 
-    <title>Prueba Backend</title>
-    
-    {!! Html::style('assets/css/bootstrap.css') !!}
-
-  </head>
-  <body>
-
-    <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<h3 class="text-primary text-center">
-				Prueba Cube Summation por Ernesto Soto
-			</h3>
-			<br/>
+@section('content')
 			
 			<!--<form action="result.php" method="POST">-->
 			{{ Form::open(array('url' => 'result', 'method' => 'post')) }}
@@ -41,16 +23,15 @@
 			</div>
 			{{ Form::close() }}
 			<!--</form>-->
-		</div>
-	</div>
-</div>
+@stop
 
-	{!! Html::script('assets/js/bootstrap.min.js') !!}
-	<script type="text/javascript">
+@section('scripting')
+
+    <script type="text/javascript">
 		function cleanText(){
 			document.getElementById('entrada').value = "";
 			document.getElementById('entrada').innerHTML = "";
 		}
 	</script>
-  </body>
-</html>
+
+@stop

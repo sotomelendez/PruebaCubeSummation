@@ -157,6 +157,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         
         Collective\Html\HtmlServiceProvider::class,
+        
 
     ],
 
@@ -206,7 +207,6 @@ return [
 
         'Form' => 'Collective\Html\FormFacade',
         'Html' => 'Collective\Html\HtmlFacade',
-
 
     ],
 
