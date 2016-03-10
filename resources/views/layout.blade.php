@@ -16,7 +16,7 @@
     	<div class="row">
     		<div class="col-md-12">
     			<h3 class="text-primary text-center">
-    				Prueba Cube Summation por Ernesto Soto
+    				Prueba Cube Summation
     			</h3>
     			
     			<br/>
