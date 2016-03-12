@@ -19,9 +19,7 @@ Route::get('/', function () {
 
 Route::get('/', 'CubeController@home');
 
-Route::get('resulttest', 'CubeController@resulttest');
 Route::post('result', 'CubeController@result');
-Route::get('error', 'CubeController@error');
 
 
 /*
