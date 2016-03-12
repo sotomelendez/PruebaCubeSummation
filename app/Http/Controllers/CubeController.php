@@ -22,7 +22,7 @@ class CubeController extends Controller
         
         $output = "\n";
         try{
-            $instructions = explode("\n",$entrada);
+            $instructions = explode(PHP_EOL,$entrada);
             
             $actualLine = 0;
             
