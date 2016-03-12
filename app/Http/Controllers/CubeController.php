@@ -20,7 +20,7 @@ class CubeController extends Controller
     {
         $entrada = $request->input('entrada');
         
-        $output = "\n";
+        $output = PHP_EOL;
         try{
             $instructions = explode(PHP_EOL,$entrada);
             
@@ -69,13 +69,13 @@ class CubeController extends Controller
                                 }
                             }
                         }
-            			$output = $output . strval($sum) . "\n";
+            			$output = $output . strval($sum) . PHP_EOL;
                     }
                 }
             }
-            if($output == "\n")
+            if($output == PHP_EOL)
             {
-                $output = "\n" . "Se produjo un error. Puede que los datos de entrada no tengan el formato correcto.";
+                $output = PHP_EOL . "Se produjo un error. Puede que los datos de entrada no tengan el formato correcto.";
                 return view('cube.error', ['output' => $output]);
             }
             else
@@ -85,7 +85,7 @@ class CubeController extends Controller
         }
         catch(\Exception $ex)
         {
-            $output = "\n" . "Se produjo un error. Puede que los datos de entrada no tengan el formato correcto.";
+            $output = PHP_EOL . "Se produjo un error. Puede que los datos de entrada no tengan el formato correcto.";
             return view('cube.error', ['output' => $output]);
         }
     }
