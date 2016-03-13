@@ -90,8 +90,4 @@ class CubeController extends Controller
         }
     }
     
-    public function resulttest()
-    {
-        return view('cube.result');
-    }
 }
